@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seelam Manjunath Reddy | Security Specialist</title>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <canvas id="particles-canvas"></canvas>
+
+    <nav class="navbar">
+        <div class="logo">MR.</div>
+        <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#certificates">Certifications</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li class="resume-dropdown">
+                <a href="#" class="btn-small">Resume <i class="fas fa-caret-down"></i></a>
+                <div class="dropdown-content">
+                    <a href="assets/resumes/Seelam_Manjunath_Reddy_ATS_Resume.pdf" target="_blank">ATS Resume</a>
+                    <a href="assets/resumes/Seelam_Manjunath_Reddy_CV.pdf" target="_blank">Detailed CV</a>
+                    <a href="assets/resumes/Seelam_Manjunath_Reddy_Meltwater_Resume.pdf" target="_blank">Meltwater Resume</a>
+                </div>
+            </li>
+        </ul>
+        <div class="hamburger"><i class="fas fa-bars"></i></div>
+    </nav>
+
+    <header id="hero">
+        <div class="hero-content">
+            <p class="hi-text">Hi, my name is</p>
+            <h1 class="big-heading gradient-text">Seelam Manjunath Reddy.</h1>
+            <h2 class="sub-heading">I build secure digital experiences.</h2>
+            <p class="hero-desc">
+                I'm a Second Year MCA Student specializing in <span class="highlight">Security&nbsp;Essentials</span>. 
+                Currently exploring <span class="highlight">Ethical&nbsp;Hacking</span>, <span class="highlight">Cyber&nbsp;Security</span>, and NLP.
+            </p>
+            <div class="hero-btns">
+                <a href="#projects" class="btn-main">Check out my work</a>
+            </div>
+        </div>
+
+        <div class="hero-visual">
+            <div class="rotating-core">
+                <div class="core-counter-rotator">
+                    <i class="fas fa-fingerprint core-fingerprint"></i>
+                </div>
+            </div>
+            <i class="fas fa-shield-alt bouncer"></i>
+            <i class="fas fa-lock bouncer"></i>
+            <i class="fas fa-code bouncer"></i>
+            <i class="fab fa-java bouncer"></i>
+            <i class="fab fa-python bouncer"></i>
+            <i class="fas fa-brain bouncer" title="NLP"></i>
+            <i class="fas fa-user-secret bouncer" title="Hacker"></i>
+        </div>
+    </header>
+
+    <section id="about" class="section-padding hidden-section">
+        <h2 class="section-heading">About Me</h2>
+        <div class="about-content">
+            <div class="about-text">
+                <p>Hello! I am <span class="highlight">Seelam Manjunath Reddy</span>, a postgraduate student with a passion for <strong>Cybersecurity</strong> and <strong>Full-Stack Development</strong>.</p>
+                <p>My interest in technology started with building simple websites, but it evolved into a fascination with how systems work—and how to secure them.</p>
+                <p>Here are a few technologies I work with:</p>
+                <ul class="about-tech-list">
+                    <li><i class="fab fa-java"></i> Java</li>
+                    <li><i class="fab fa-python"></i> Python/Flask</li>
+                    <li><i class="fas fa-user-secret"></i> Ethical Hacking</li>
+                    <li><i class="fas fa-brain"></i> NLP (spaCy)</li>
+                    <li><i class="fab fa-angular"></i> Angular</li>
+                    <li><i class="fas fa-database"></i> SQL</li>
+                </ul>
+            </div>
+
+            <div class="about-img">
+                <div class="cyber-profile-container">
+                    <img src="assets/images/Profile.jpg" alt="Profile Photo">
+                    <div class="scan-line"></div>
+                    <div class="lock-overlay"><i class="fas fa-lock"></i></div>
+                    <div class="unlock-overlay"><i class="fas fa-unlock"></i></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="section-padding hidden-section">
+        <h2 class="section-heading">Technical Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-card"><i class="fas fa-code skill-icon"></i><h3>Development</h3><p>HTML5, CSS3, JavaScript, Bootstrap, Angular, Python, Flask</p></div>
+            <div class="skill-card"><i class="fas fa-user-shield skill-icon"></i><h3>Security</h3><p>Network Security, Ethical Hacking, Cybersecurity Concepts</p></div>
+            <div class="skill-card"><i class="fas fa-brain skill-icon"></i><h3>Data & AI</h3><p>SQL, MySQL, NLP (spaCy, NLTK), Pandas, NumPy</p></div>
+            <div class="skill-card"><i class="fas fa-tools skill-icon"></i><h3>Tools</h3><p>GitHub / Git, Figma, Canva, VS Code, PyCharm</p></div>
+        </div>
+    </section>
+
+    <section id="projects" class="section-padding hidden-section">
+        <h2 class="section-heading">Some Things I've Built</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <div class="project-header"><i class="far fa-folder project-folder-icon"></i><div class="project-links"><a href="#" target="_blank"><i class="fab fa-github"></i></a><a href="#" target="_blank"><i class="fas fa-external-link-alt"></i></a></div></div>
+                <h3 class="project-title">ClarifAI (PG Capstone)</h3>
+                <p class="project-desc">An intelligent web app using NLP to analyze text sentiment.</p>
+                <ul class="project-tech-list"><li><i class="fab fa-python"></i> Flask</li><li><i class="fas fa-brain"></i> spaCy</li><li><i class="fas fa-chart-bar"></i> Dashboards</li></ul>
+            </div>
+            <div class="project-card">
+                <div class="project-header"><i class="far fa-folder project-folder-icon"></i><div class="project-links"><a href="#" target="_blank" title="View Code"><i class="fab fa-github"></i></a><a href="#" target="_blank" title="View Project"><i class="fas fa-external-link-alt"></i></a><a href="#" target="_blank" title="Research Paper"><i class="fas fa-file-pdf"></i></a></div></div>
+                <h3 class="project-title">Mirror Site Analysis</h3>
+                <p class="project-desc">Research Work: Security analysis of mirror websites vs. original sites.</p>
+                <ul class="project-tech-list"><li><i class="fas fa-shield-alt"></i> Security</li><li><i class="fas fa-search"></i> Research</li></ul>
+            </div>
+            <div class="project-card">
+                <div class="project-header"><i class="far fa-folder project-folder-icon"></i><div class="project-links"><a href="#" target="_blank"><i class="fab fa-github"></i></a><a href="#" target="_blank"><i class="fas fa-external-link-alt"></i></a></div></div>
+                <h3 class="project-title">Bubbly Mobile Store</h3>
+                <p class="project-desc">A responsive e-commerce frontend for a mobile store.</p>
+                <ul class="project-tech-list"><li><i class="fab fa-html5"></i> HTML5</li><li><i class="fab fa-css3-alt"></i> CSS3</li><li><i class="fab fa-js"></i> JS</li></ul>
+            </div>
+        </div>
+        <div class="text-center" style="margin-top: 40px;">
+            <a href="projects.html" class="btn-small">View All Projects →</a>
+        </div>
+    </section>
+
+    <section id="certificates" class="section-padding hidden-section">
+        <h2 class="section-heading">Certifications</h2>
+        <div class="cert-preview-grid">
+            <div class="cert-preview-card" onclick="window.location.href='certificates.html#coursera-section'">
+                <div class="cert-thumb-container"><i class="fas fa-certificate cert-placeholder-icon"></i></div>
+                <div class="cert-info"><h3>Coursera & Online</h3><p>30+ Certifications</p></div>
+            </div>
+            <div class="cert-preview-card" onclick="window.location.href='certificates.html#internship-section'">
+                <div class="cert-thumb-container"><i class="fas fa-briefcase cert-placeholder-icon"></i></div>
+                <div class="cert-info"><h3>Internships</h3><p>Cisco & Industry Experience</p></div>
+            </div>
+            <div class="cert-preview-card" onclick="window.location.href='certificates.html#achievements-section'">
+                <div class="cert-thumb-container"><i class="fas fa-trophy cert-placeholder-icon"></i></div>
+                <div class="cert-info"><h3>Achievements</h3><p>Competitions & Research</p></div>
+            </div>
+        </div>
+        <div class="text-center" style="margin-top: 50px;">
+            <a href="certificates.html" class="btn-small">View All Certifications →</a>
+        </div>
+    </section>
+
+    <section id="contact" class="section-padding text-center hidden-section">
+        <h2 class="big-heading" style="font-size: 3rem; margin-bottom: 20px;">Get In Touch</h2>
+        <p class="contact-desc">I am currently looking for internship opportunities in Security or Full-Stack Development.</p>
+        <div style="margin-top: 20px;"><a href="mailto:seelammanjunathreddy6@gmail.com" target="_blank" class="btn-main">Say Hello</a></div>
+        <div class="social-links-footer">
+            <a href="#" target="_blank"><i class="fab fa-github"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+            <a href="#" target="_blank"><i class="fab fa-discord"></i></a>
+            <a href="#" target="_blank" title="Figma"><i class="fas fa-pen-nib"></i></a>
+            <a href="#" target="_blank" title="Canva"><i class="fas fa-palette"></i></a>
+        </div>
+    </section>
+
+    <footer><p>Designed & Built by Seelam Manjunath Reddy &middot; 2025</p></footer>
+    <script src="script.js"></script>
+</body>
+</html>
