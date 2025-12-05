@@ -1,41 +1,38 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Certifications Timeline | Seelam Manjunath Reddy</title>
-    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;600&family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>Certificates — Portfolio</title>
+<link rel="stylesheet" href="style.css" />
 </head>
 <body>
-    <canvas id="particles-canvas"></canvas>
-
-    <nav class="navbar">
-        <div class="logo"><a href="index.html">MR.</a></div>
-        <ul class="nav-links">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="#timeline-start">Timeline</a></li>
-        </ul>
+  <header class="site-header">
+    <nav class="nav">
+      <a href="index.html">Home</a>
+      <a href="projects.html">Projects</a>
+      <a class="active" href="certificates.html">Certificates</a>
+      <a href="certificates.html#coursera">Coursera</a>
+      <a href="certificates.html#internships">Internships</a>
+      <a href="certificates.html#achievements">Achievements</a>
     </nav>
+  </header>
 
-    <section class="section-padding" id="timeline-start" style="margin-top: 40px;">
-        <h1 class="big-heading gradient-text text-center">Certification Archive</h1>
-        <p class="text-center contact-desc">A comprehensive timeline of my 30+ certifications across AI, Security, and Development.</p>
+  <main class="container">
+    <h1>Certificates</h1>
+    <p class="lead">All certificates grouped by category. Click a category to expand. Use the sort selector inside each category.</p>
 
-        <div id="certificate-timeline-container"></div>
-    </section>
+    <section id="cert-list"></section>
+  </main>
 
-    <div id="pdf-modal" class="pdf-modal-overlay" onclick="closePdfModal()">
-        <div class="pdf-modal-content" onclick="event.stopPropagation()"> 
-            <div class="pdf-header">
-                <span id="modal-title" class="pdf-title">Certificate Preview</span>
-                <i class="fas fa-times close-btn" onclick="closePdfModal()"></i>
-            </div>
-            <iframe id="pdf-frame" class="pdf-viewer-frame" src=""></iframe>
-        </div>
+  <!-- Simple lightbox -->
+  <div id="lightbox" class="hidden">
+    <div id="lightbox-inner">
+      <button id="lb-close">Close</button>
+      <img id="lb-img" src="" alt="preview" />
     </div>
+  </div>
 
-    <script src="script.js"></script>
+  <script src="assets/js/script.js"></script>
 </body>
 </html>
